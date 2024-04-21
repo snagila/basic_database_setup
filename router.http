@@ -1,0 +1,22 @@
+#### Get list from server
+GET http://localhost:8000/api/form
+
+
+#### POST data to server
+POST  http://localhost:8000/api/form
+#header of the request
+Content-Type: application/json
+
+ #body of the request,there should be gap between header and body
+{
+    "name": "Sachin",
+    "phone": "098765404",
+    "address": "Hornsby",
+    "message":"I love also Sunday class."
+}
+
+
+### patch data into server
+PATCH http://localhost:8000/api/form
+
+Content-Type: application/json

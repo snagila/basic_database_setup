@@ -1,4 +1,4 @@
-import form from "./FormSchema";
+import form from "./FormSchema.js";
 
 // create
 
@@ -16,6 +16,6 @@ export const updateData = (id, formObj) => {
   return form.updateOne({ _id: id }, { $set: { ...formObj } });
 };
 // delete
-export const deleteTask = (id) => {
+export const deleteData = (id) => {
   return form.deleteOne({ _id: id });
 };

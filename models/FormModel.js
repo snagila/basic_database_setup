@@ -12,7 +12,7 @@ export const getData = () => {
 // update
 
 export const updateData = (id, formObj) => {
-  console.log(id, type);
+  console.log(id);
   return form.updateOne({ _id: id }, { $set: { ...formObj } });
 };
 // delete

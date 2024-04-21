@@ -9,14 +9,29 @@ Content-Type: application/json
 
  #body of the request,there should be gap between header and body
 {
-    "name": "Sachin",
+    "name": "jatin",
     "phone": "098765404",
     "address": "Hornsby",
     "message":"I love also Sunday class."
 }
 
 
-### patch data into server
+### patch data into server 
 PATCH http://localhost:8000/api/form
-
 Content-Type: application/json
+
+{
+     "id": "66249598028f63f8587f9b74",
+      "name": "Sujan Thapa",
+      "phone": "1111111",
+      "address": "Campsie",
+      "message": "I love also Sunday class."
+}
+
+### delete data into server
+DELETE http://localhost:8000/api/form
+Content-Type: application/json
+
+{
+"id": "6624a2a1b6b41956ff224d5e"
+    }
